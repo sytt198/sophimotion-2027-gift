@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b10">
+  <title>SOPHIMOTION — 2027 灵感礼盒</title>
+  <meta name="description" content="打开 2027 灵感礼盒。随滚动展开双翼盒盖，探索日历、小车、3D 打印笔与 NFC 钥匙扣。">
+  <link rel="icon" type="image/svg+xml" href="./assets/sophi-symbol.svg">
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#story-copy">跳到礼盒介绍</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="SOPHIMOTION 首页"><img src="./assets/sophi-symbol.svg" alt=""><span>SOPHIMOTION</span></a>
+    <nav aria-label="主要导航"><button id="story-nav" class="nav-link is-active">礼盒故事</button><button id="explore-nav" class="nav-link">自由探索 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button></nav>
+  </header>
+  <main id="story" aria-label="2027 礼盒互动展示">
+    <div class="stage">
+      <div id="scene-wrap" class="scene-wrap"><canvas id="gift-canvas" aria-label="可交互的 2027 礼盒 3D 模型"></canvas><div id="load-state" class="load-state" role="status"><span class="loading-line"></span><span>正在准备礼盒…</span></div><div id="webgl-fallback" hidden><p>当前设备暂时无法显示 3D 场景。</p><button class="text-button" data-open-video>观看礼盒动画</button></div></div>
+      <section class="story-copy" id="story-copy" aria-live="polite" aria-atomic="true">
+        <div class="year" aria-hidden="true">2027</div>
+        <div class="chapter-label" hidden></div>
+        <h1>把灵感，<br>装进新一年。</h1>
+        <p class="description">四件日常好物，一次完整开启。</p>
+        <div class="detail-line" hidden></div>
+        <button class="primary-button" id="start-button"><span>开启礼盒</span><svg viewBox="0 0 28 20" aria-hidden="true"><path d="M1 10h24M17 2l8 8-8 8"/></svg></button>
+      </section>
+      <div class="chapter-rail" aria-label="展示章节">
+        <button data-progress="0" aria-label="礼盒封面" aria-current="step"><span>封面</span></button>
+        <button data-progress="0.25" aria-label="双翼开盒"><span>开启</span></button>
+        <button data-progress="0.5" aria-label="日历"><span>日历</span></button>
+        <button data-progress="0.62" aria-label="小车"><span>小车</span></button>
+        <button data-progress="0.75" aria-label="笔与钥匙扣"><span>随行</span></button>
+        <button data-progress="1" aria-label="完整礼盒"><span>全貌</span></button>
+      </div>
+      <div class="bottom-bar">
+        <div id="scroll-prompt" class="scroll-prompt"><span>向下滚动，展开礼盒</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 7 5 5 5-5"/></svg></div>
+        <div id="product-selector" class="product-selector" hidden aria-label="选择展示产品"><button data-product="calendar">日历</button><i>/</i><button data-product="car">小车</button><i>/</i><button data-product="pen">笔</button><i>/</i><button data-product="keychain">NFC 钥匙扣</button></div>
+        <div class="playback"><button id="play-button" class="text-button" aria-label="自动播放礼盒开合"><svg class="play-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6z"/></svg><span>自动播放</span></button><span class="divider"></span><button data-open-video class="text-button">查看动画</button></div>
+      </div>
+      <div id="explore-hint" class="explore-hint" hidden>拖动旋转 · 滚轮缩放<button id="reset-view">重置视角</button><button id="close-box">合上礼盒</button></div>
+      <div class="progress-track" aria-hidden="true"><div id="progress-fill"></div></div>
+    </div>
+    <div class="scroll-space" aria-hidden="true"></div>
+  </main>
+  <dialog id="video-dialog" aria-label="2027 礼盒动画"><div class="video-heading"><span>2027 / SOPHIMOTION</span><button id="close-video" aria-label="关闭动画"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><video id="gift-video" controls playsinline preload="none" poster="./assets/video-poster.png" src="./assets/2027-gift-box.mp4"></video><p class="video-caption">完整开启，灵感归位。<a href="./assets/2027-gift-box.mp4" download="SOPHIMOTION-2027.mp4">下载动画</a></p></dialog>
+  <noscript><p class="noscript">请启用 JavaScript 查看互动礼盒，或<a href="./assets/2027-gift-box.mp4">直接观看动画</a>。</p></noscript>
+  <script type="module" src="./app.js"></script>
+</body></html>

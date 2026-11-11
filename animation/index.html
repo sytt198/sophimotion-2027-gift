@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>2027 · A gift, thoughtfully assembled</title>
+  <script src="assets/gsap.min.js"></script>
+  <style>
+    * { box-sizing:border-box; }
+    html,body { margin:0; width:1920px; height:1080px; overflow:hidden; background:#080b10; }
+    #root { position:relative; width:1920px; height:1080px; color:#f2f3f5; font-family:Inter,Arial,sans-serif; }
+  </style>
+  <script type="importmap">{"imports":{"three":"./assets/scene/vendor/three.module.js","three/addons/":"./assets/scene/vendor/addons/"}}</script>
+</head>
+<body>
+  <div id="root" data-composition-id="main" data-start="0" data-duration="14" data-width="1920" data-height="1080">
+    <div id="gift" class="clip" data-composition-id="gift" data-composition-src="compositions/gift.html" data-start="0" data-duration="14" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+  </div>
+  <script>window.__timelines["main"] = gsap.timeline({paused:true});</script>
+</body>
+</html>

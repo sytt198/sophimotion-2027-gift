@@ -1,0 +1,448 @@
+{
+  "coordinateSystem": "STEP axes in mm: X right/width, Y depth, Z up. XY centered on full CAD bounding box, minZ=0. Rotate root -pi/2 about X for Y-up scenes.",
+  "assets": [
+    {
+      "file": "pen.glb",
+      "bytes": 335408,
+      "meshes": 10,
+      "vertices": 10637,
+      "triangles": 12100,
+      "parts": [
+        {
+          "name": "pen_STEP_solid_0",
+          "vertices": 280,
+          "triangles": 276,
+          "material": 2,
+          "bounds": [
+            [
+              -63.34000015258789,
+              -2.680276393890381,
+              4.158630847930908
+            ],
+            [
+              61.27000045776367,
+              2.679947853088379,
+              9.613601684570312
+            ]
+          ]
+        },
+        {
+          "name": "pen_STEP_solid_1",
+          "vertices": 325,
+          "triangles": 514,
+          "material": 0,
+          "bounds": [
+            [
+              45.49919509887695,
+              -5.4525980949401855,
+              1.4997334480285645
+            ],
+            [
+              70.5119400024414,
+              5.524165153503418,
+              12.360895156860352
+            ]
+          ]
+        },
+        {
+          "name": "pen_STEP_solid_2",
+          "vertices": 793,
+          "triangles": 804,
+          "material": 0,
+          "bounds": [
+            [
+              41.49985122680664,
+              -5.837046146392822,
+              1.0781583786010742
+            ],
+            [
+              45.500144958496094,
+              5.829619407653809,
+              12.72779369354248
+            ]
+          ]
+        },
+        {
+          "name": "pen_STEP_solid_3",
+          "vertices": 1492,
+          "triangles": 1572,
+          "material": 0,
+          "bounds": [
+            [
+              45.49942398071289,
+              -4.077754020690918,
+              2.818875551223755
+            ],
+            [
+              57.560142517089844,
+              4.075011253356934,
+              10.976157188415527
+            ]
+          ]
+        },
+        {
+          "name": "pen_STEP_solid_4",
+          "vertices": 135,
+          "triangles": 158,
+          "material": 0,
+          "bounds": [
+            [
+              -7.191018104553223,
+              -3.6528124809265137,
+              0.29846832156181335
+            ],
+            [
+              35.51974105834961,
+              3.48580265045166,
+              3.2360031604766846
+            ]
+          ]
+        },
+        {
+          "name": "pen_STEP_solid_5",
+          "vertices": 111,
+          "triangles": 122,
+          "material": 0,
+          "bounds": [
+            [
+              -12.266048431396484,
+              -7.059460163116455,
+              5.418272495269775
+            ],
+            [
+              35.23955535888672,
+              -1.5749279260635376,
+              13.053142547607422
+            ]
+          ]
+        },
+        {
+          "name": "pen_STEP_solid_6",
+          "vertices": 142,
+          "triangles": 160,
+          "material": 0,
+          "bounds": [
+            [
+              -12.286056518554688,
+              0.9464552402496338,
+              5.079986095428467
+            ],
+            [
+              35.42941665649414,
+              7.064797878265381,
+              13.089470863342285
+            ]
+          ]
+        },
+        {
+          "name": "pen_STEP_solid_7",
+          "vertices": 2299,
+          "triangles": 2502,
+          "material": 0,
+          "bounds": [
+            [
+              -61.468421936035156,
+              -4.5861310958862305,
+              -0.0005747839459218085
+            ],
+            [
+              -16.484317779541016,
+              4.43422794342041,
+              3.247776508331299
+            ]
+          ]
+        },
+        {
+          "name": "pen_STEP_solid_8",
+          "vertices": 2042,
+          "triangles": 2078,
+          "material": 0,
+          "bounds": [
+            [
+              -61.45682907104492,
+              -4.333522319793701,
+              10.554999351501465
+            ],
+            [
+              -16.48673439025879,
+              4.172084331512451,
+              12.88228702545166
+            ]
+          ]
+        },
+        {
+          "name": "pen_STEP_solid_9",
+          "vertices": 3018,
+          "triangles": 3914,
+          "material": 0,
+          "bounds": [
+            [
+              -70.50099182128906,
+              -8.20638656616211,
+              0.29530930519104004
+            ],
+            [
+              49.501243591308594,
+              8.209996223449707,
+              13.530207633972168
+            ]
+          ]
+        }
+      ],
+      "source": "笔v0.step",
+      "sourceSolidCount": 10,
+      "exportedSolidIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sourceBounds": [
+        -1.0000000000000002,
+        -8.20862408408638,
+        -6.897189978186115,
+        140.00000009999997,
+        8.208952691951078,
+        6.6331712348443395
+      ],
+      "subtractOffsetMm": [
+        69.50000004999998,
+        0.00016430393234934115,
+        -6.897189978186115
+      ],
+      "fullDimensionsMm": [
+        141.00000009999997,
+        16.417576776037457,
+        13.530361213030455
+      ],
+      "elapsedSeconds": 8.187489986419678,
+      "tessellation": "Chord tolerance 0.09mm pen / 0.12mm car, angular tolerance 0.22 rad; 70% volume-preserving quadric mesh reduction for web display.",
+      "exportBoundsMm": [
+        [
+          -70.50099182128906,
+          -8.20638656616211,
+          -0.0005747839459218085
+        ],
+        [
+          70.5119400024414,
+          8.209996223449707,
+          13.530207633972168
+        ]
+      ],
+      "exportDimensionsMm": [
+        141.012939453125,
+        16.4163818359375,
+        13.530782699584961
+      ]
+    },
+    {
+      "file": "car.glb",
+      "bytes": 392916,
+      "meshes": 8,
+      "vertices": 12141,
+      "triangles": 15936,
+      "parts": [
+        {
+          "name": "car_STEP_solid_164",
+          "vertices": 1118,
+          "triangles": 1122,
+          "material": 1,
+          "bounds": [
+            [
+              -32.11294174194336,
+              -46.454307556152344,
+              33.5
+            ],
+            [
+              32.88705825805664,
+              43.545692443847656,
+              46.5
+            ]
+          ]
+        },
+        {
+          "name": "car_STEP_solid_165",
+          "vertices": 2139,
+          "triangles": 2782,
+          "material": 0,
+          "bounds": [
+            [
+              34.0,
+              -53.975799560546875,
+              1.4210854715202004e-14
+            ],
+            [
+              49.99991226196289,
+              -21.024198532104492,
+              33.0
+            ]
+          ]
+        },
+        {
+          "name": "car_STEP_solid_166",
+          "vertices": 142,
+          "triangles": 110,
+          "material": 3,
+          "bounds": [
+            [
+              24.0,
+              7.0,
+              11.497528076171875
+            ],
+            [
+              42.00001907348633,
+              41.5,
+              23.502471923828125
+            ]
+          ]
+        },
+        {
+          "name": "car_STEP_solid_167",
+          "vertices": 2874,
+          "triangles": 4164,
+          "material": 0,
+          "bounds": [
+            [
+              34.5,
+              21.024198532104492,
+              1.0
+            ],
+            [
+              50.499961853027344,
+              53.975799560546875,
+              34.0
+            ]
+          ]
+        },
+        {
+          "name": "car_STEP_solid_168",
+          "vertices": 718,
+          "triangles": 702,
+          "material": 0,
+          "bounds": [
+            [
+              -38.0,
+              -47.5,
+              8.5
+            ],
+            [
+              38.0,
+              41.5,
+              33.5
+            ]
+          ]
+        },
+        {
+          "name": "car_STEP_solid_169",
+          "vertices": 2141,
+          "triangles": 2782,
+          "material": 0,
+          "bounds": [
+            [
+              -49.999881744384766,
+              -53.975799560546875,
+              1.2789769243681803e-13
+            ],
+            [
+              -34.0,
+              -21.024198532104492,
+              33.0
+            ]
+          ]
+        },
+        {
+          "name": "car_STEP_solid_170",
+          "vertices": 142,
+          "triangles": 110,
+          "material": 3,
+          "bounds": [
+            [
+              -42.00001907348633,
+              7.0,
+              11.497528076171875
+            ],
+            [
+              -24.0,
+              41.5,
+              23.502471923828125
+            ]
+          ]
+        },
+        {
+          "name": "car_STEP_solid_171",
+          "vertices": 2867,
+          "triangles": 4164,
+          "material": 0,
+          "bounds": [
+            [
+              -50.49993133544922,
+              21.024198532104492,
+              1.0
+            ],
+            [
+              -34.5,
+              53.975799560546875,
+              34.0
+            ]
+          ]
+        }
+      ],
+      "source": "maker小车1105.step",
+      "sourceSolidCount": 172,
+      "exportedSolidIndices": [
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171
+      ],
+      "sourceBounds": [
+        -28.387058721474435,
+        -27.54569118139659,
+        -46.50000000000023,
+        72.61294127852594,
+        80.45430901860381,
+        14.138619543112588
+      ],
+      "subtractOffsetMm": [
+        22.112941278525753,
+        26.45430891860361,
+        -46.50000000000023
+      ],
+      "fullDimensionsMm": [
+        101.00000000000037,
+        108.0000002000004,
+        60.63861954311282
+      ],
+      "elapsedSeconds": 36.93416452407837,
+      "tessellation": "Chord tolerance 0.09mm pen / 0.12mm car, angular tolerance 0.22 rad; 70% volume-preserving quadric mesh reduction for web display.",
+      "exportBoundsMm": [
+        [
+          -50.49993133544922,
+          -53.975799560546875,
+          1.4210854715202004e-14
+        ],
+        [
+          50.499961853027344,
+          53.975799560546875,
+          46.5
+        ]
+      ],
+      "exportDimensionsMm": [
+        100.99989318847656,
+        107.95159912109375,
+        46.5
+      ],
+      "note": "Mechanical external shell and wheel CAD only. PCB/electronics omitted; photo-style studded top and white front light must be supplied by scene. Full dimensions refer to original complete assembly. The mesh is a display approximation, not a manufacturing file."
+    }
+  ]
+}

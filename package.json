@@ -1,0 +1,18 @@
+{
+  "name": "sophimotion-2027-gift",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "check": "node --check dist/app.js && node --check dist/gift-scene.js && node scripts/validate_cad_glb.mjs",
+    "test:browser": "node scripts/check-experience.cjs",
+    "video:sync": "node scripts/sync-video-assets.mjs"
+  },
+  "description": "SOPHIMOTION 2027 interactive gift box",
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2"
+  }
+}
